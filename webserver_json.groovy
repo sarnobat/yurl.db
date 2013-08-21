@@ -49,7 +49,6 @@ class MyHandler implements HttpHandler {
 		t.getResponseHeaders().add("Content-type", "application/json");
 		t.sendResponseHeaders(200, json.toString().length());
 		
-		println('1');
 		//
 		// Graph persistence
 		//
@@ -57,26 +56,17 @@ class MyHandler implements HttpHandler {
 		GraphDatabaseService graphDb = new GraphDatabaseFactory().newEmbeddedDatabase("yurl.db");
 		
 		
-		println('2');
 		//
 		// Create node
 		//
 		
 		Transaction tx = graphDb.beginTx();
 		
-		println('2.1');
 		try
 		{
 			Node firstNode = graphDb.createNode();
-			println('2.2 - ' + value);
 			firstNode.setProperty( "url", value);			
-			println('2.3');
-			// Updating operations go here
-			
-			println('2.4');
 			tx.success();
-			
-			println('3');
 		}
 		finally
 		{
