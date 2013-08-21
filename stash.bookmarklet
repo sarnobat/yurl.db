@@ -5,7 +5,6 @@ javascript:(function(){
 	
 		if(x.readyState==4){
 			if(x.status==200) {
-                alert("Success: " + x.responseText);
                 window.open('', '_self', ''); 
 				window.close(); 
 			}
