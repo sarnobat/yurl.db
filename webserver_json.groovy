@@ -1,3 +1,9 @@
+
+import java.io.DataInputStream;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import org.neo4j.graphdb.*;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Node;
@@ -34,6 +40,86 @@ class MyHandler implements HttpHandler {
 		}  
 		return map;  
 	}  
+	
+	public String getTitle( URL theURL )
+	{
+		String startTag = "<title>";
+		String endTag = "</title>";
+		int startTagLength = startTag.length();
+		
+		BufferedReader bufReader;
+		String line;
+		boolean foundStartTag = false;
+		boolean foundEndTag = false;
+		int startIndex, endIndex;
+		String title = "";
+		
+		try
+		{
+		  //open file
+		  bufReader = new BufferedReader( new InputStreamReader(theURL.openStream()) );
+		  
+		  //read line by line
+		  while( (line = bufReader.readLine()) != null && !foundEndTag)
+		  {
+			//System.out.println(line);
+		  
+			//search for title start tag (convert to lower case before searhing)
+			if( !foundStartTag && (startIndex = line.toLowerCase().indexOf(startTag)) != -1 )
+			{
+			  foundStartTag = true;
+			}
+			else
+			{
+			  //else copy from start of string
+			  startIndex = -startTagLength;
+			}
+			
+			//search for title start tag (convert to lower case before searhing)
+			if( foundStartTag && (endIndex = line.toLowerCase().indexOf(endTag)) != -1 )
+			{
+			  foundEndTag = true;
+			}
+			else
+			{
+			  //else copy to end of string
+			  endIndex = line.length();
+			}
+			
+			//extract title field
+			if( foundStartTag || foundEndTag )
+			{
+			  //System.out.println("foundStartTag="+foundStartTag);
+			  //System.out.println("foundEndTag="+foundEndTag);
+			  //System.out.println("startIndex="+startIndex);
+			  //System.out.println("startTagLength="+startTagLength);
+			  //System.out.println("endIndex="+endIndex);
+			
+			  title += line.substring( startIndex + startTagLength, endIndex );
+			}
+		  }
+		  
+		  //close the file when finished
+		  bufReader.close();
+		  
+		  //output the title
+		  if( title.length() > 0 )
+		  {
+			System.out.println("Title: "+title);
+		  }
+		  else
+		  {
+			System.out.println("No title found in document.");
+		  }
+		  return title;
+		  
+		}
+		catch( IOException e )
+		{
+		  System.out.println( "GetTitle.GetTitle - error opening or reading URL: " + e );
+		}
+		return "FAIL";
+	}
 
 	public void handle(HttpExchange t) throws IOException {
 		JSONObject json = new JSONObject();
@@ -48,6 +134,15 @@ class MyHandler implements HttpHandler {
 		t.getResponseHeaders().add("Access-Control-Allow-Origin","*");
 		t.getResponseHeaders().add("Content-type", "application/json");
 		t.sendResponseHeaders(200, json.toString().length());
+		
+		
+		//
+		// Get page title
+		//
+		println("1");
+
+		URL url = new URL(value);
+		println('title:: ' + getTitle(url));
 		
 		//
 		// Graph persistence
