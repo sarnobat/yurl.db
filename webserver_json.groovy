@@ -81,6 +81,7 @@ class MyHandler implements HttpHandler {
 			Node firstNode = graphDb.createNode();
 			firstNode.setProperty("title", title);
 			firstNode.setProperty("url", value);
+			firstNode.setProperty("created", System.currentTimeMillis());
 			tx.success();
 		} finally {
 			tx.finish();
