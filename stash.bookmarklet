@@ -1,11 +1,13 @@
 javascript:(function(){
 	var x = new XMLHttpRequest();
-	x.open('GET','http://localhost:4444/?param1=' + location.href,true);
+	x.open('GET','http://localhost:4444/?param1=' +  encodeURIComponent(location.href),true);
 	x.onreadystatechange = function(){
 	
 		if(x.readyState==4){
 			if(x.status==200) {
-				alert("Success: " + x.responseText);
+                alert("Success: " + x.responseText);
+                window.open('', '_self', ''); 
+				window.close(); 
 			}
 		}
 		

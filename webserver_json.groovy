@@ -39,7 +39,7 @@ class MyHandler implements HttpHandler {
 		JSONObject json = new JSONObject();
 		String query = t.getRequestURI().toString();
 		Map<String, String> map = getQueryMap(query);
-		String httpUrl = map.get("/?param1");
+		String httpUrl = URLDecoder.decode(map.get("/?param1"));
 		try {
 			json.put("myKey", httpUrl);
 		} catch (JSONException e) {
@@ -85,25 +85,31 @@ class MyHandler implements HttpHandler {
 		} finally {
 			tx.finish();
 		}
-		printAllNodes(title, graphDb);
+		printAllNodes(graphDb);
 		graphDb.shutdown();
 	}
 
-	public void printAllNodes(String title, GraphDatabaseService graphDb) {
-		Iterable<Node> allNodes = GlobalGraphOperations.at(graphDb).getAllNodes();
-		for (final Node node : allNodes) {
-			if (node.hasProperty("title")) {
-				title = (String) node.getProperty("title");
-			}
-			String name = "";
-			if (node.hasProperty("url")) {
-				name = (String) node.getProperty("url");
-			}
+	public void printAllNodes(GraphDatabaseService graphDb) {
+		new Runnable() {
+				@Override
+				public void run() {
+					Iterable<Node> allNodes = GlobalGraphOperations.at(graphDb).getAllNodes();
+					for (final Node node : allNodes) {
+						String title = "";
+						if (node.hasProperty("title")) {
+							title = (String) node.getProperty("title");
+						}
+						String name = "";
+						if (node.hasProperty("url")) {
+							name = (String) node.getProperty("url");
+						}
 
-			System.out.println("\"" + title + "\",\"" + name + "\"");
-			System.out.println(name);
-			System.out.println();
-		}
+						System.out.println("\"" + title + "\",\"" + name + "\"");
+						System.out.println(name);
+						System.out.println();
+					}
+				}
+			}.run();
 	}
 
 	public String getTitle(final URL url) {
