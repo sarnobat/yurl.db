@@ -2,7 +2,8 @@ javascript:(function(e,a,g,h,f,c,b,d)%7Bif(!(f%3De.jQuery)%7C%7Cg>f.fn.jquery%7C
 function(%24,L)%7B 
 	%24.getJSON("http://localhost:4444%3Fparam1%3D" %2B location.href,function(result)%7B
 	      %24.each(result, function(i, field)%7B
-	      			alert(i + "::" + field);
 	              %24("div").append(i %2B " " %2B field %2B " ")%3B
       		%7D)%3B
 	%7D)%3B%7D)%3B
+
+
