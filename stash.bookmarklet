@@ -1,6 +1,6 @@
 javascript:(function(){
 	var x = new XMLHttpRequest();
-	x.open('GET','http://localhost:4444/?param1=' +  encodeURIComponent(location.href),true);
+	x.open('GET','http://netgear.rohidekar.com:4445/?param1=' +  encodeURIComponent(location.href),true);
 	x.onreadystatechange = function(){
 	
 		if(x.readyState==4){
