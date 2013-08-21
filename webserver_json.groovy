@@ -118,7 +118,7 @@ class MyHandler implements HttpHandler {
 		{
 		  System.out.println( "GetTitle.GetTitle - error opening or reading URL: " + e );
 		}
-		return "FAIL";
+		return "";
 	}
 
 	public void handle(HttpExchange t) throws IOException {
@@ -142,7 +142,8 @@ class MyHandler implements HttpHandler {
 		println("1");
 
 		URL url = new URL(value);
-		println('title:: ' + getTitle(url));
+		String title = getTitle(url);
+		println('title:: ' + title);
 		
 		//
 		// Graph persistence
@@ -160,6 +161,7 @@ class MyHandler implements HttpHandler {
 		try
 		{
 			Node firstNode = graphDb.createNode();
+			firstNode.setProperty( "title", title);	
 			firstNode.setProperty( "url", value);			
 			tx.success();
 		}
@@ -175,7 +177,6 @@ class MyHandler implements HttpHandler {
 		
 		Iterable<Node> allNodes = GlobalGraphOperations.at(graphDb).getAllNodes();
 		for (final Node node : allNodes) {
-			String title = "";
 			if (node.hasProperty("title")) {
 				title = (String) node.getProperty("title");
 			}
@@ -188,6 +189,8 @@ class MyHandler implements HttpHandler {
 			System.out.println(name);
 			System.out.println();
 		}
+		graphDb.shutdown();
+
 		OutputStream os = t.getResponseBody();
 		os.write(json.toString().getBytes());
 		os.close();

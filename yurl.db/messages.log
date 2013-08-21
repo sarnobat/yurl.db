@@ -3034,3 +3034,1326 @@ Storage files: (filename : modification date - size)
       nioneo_logical.log.active: 2013-08-21T13:17:19-0700 - 4.00 B
       store_lock: 2013-08-21T13:17:19-0700 - 0.00 B
       tm_tx_log.1: 2013-08-21T16:27:12-0700 - 0.00 B
+2013-08-21 23:30:03.252+0000 INFO  [org.neo4j]: WARNING! You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7.
+2013-08-21 23:30:03.395+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2013-08-21 23:30:03.396+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=413M
+    neostore.nodestore.db.mapped_memory=114M
+    neostore.relationshipstore.db.mapped_memory=506M
+    neostore.propertystore.db.strings.mapped_memory=351M
+    store_dir=yurl.db
+    neostore.propertystore.db.arrays.mapped_memory=398M
+    ephemeral=false
+2013-08-21 23:30:03.403+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2013-08-21 23:30:03.404+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 4.00 GB
+    Free Physical memory: 10.13 MB
+    Committed virtual memory: 2.73 GB
+    Total swap space: 8.00 GB
+    Free swap space: 950.46 MB
+2013-08-21 23:30:03.417+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 68.12 MB
+    Total memory: 81.06 MB
+    Max   memory: 123.94 MB
+    Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+    Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=1.66 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Par Eden Space (Heap memory): committed=16.63 MB, used=9.47 MB, max=16.63 MB, threshold=?
+    Memory Pool: Par Survivor Space (Heap memory): committed=2.06 MB, used=1.70 MB, max=2.06 MB, threshold=?
+    Memory Pool: CMS Old Gen (Heap memory): committed=62.38 MB, used=1.77 MB, max=105.25 MB, threshold=0.00 B
+    Memory Pool: CMS Perm Gen (Non-heap memory): committed=20.75 MB, used=17.47 MB, max=82.00 MB, threshold=0.00 B
+2013-08-21 23:30:03.427+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Mac OS X; version: 10.7.5; arch: x86_64; cpus: 4
+    Max number of file descriptors: 10240
+    Number of open file descriptors: 115
+    Process id: 67761@Sridhars-MacBook-Air.local
+    Byte order: LITTLE_ENDIAN
+    Local timezone: America/Los_Angeles
+2013-08-21 23:30:03.434+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Apple Inc.
+    VM Version: 20.51-b01-457
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dscript.name=/opt/local/bin/groovy, -Dprogram.name=groovy, -Dgroovy.starter.conf=/opt/local/share/java/groovy/conf/groovy-starter.conf, -Dgroovy.home=/opt/local/share/java/groovy, -Dtools.jar=/System/Library/Frameworks/JavaVM.framework/Home//lib/tools.jar]
+2013-08-21 23:30:03.435+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] /System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks/JavaRuntimeSupport.framework/Versions/A/Resources/Java/JavaRuntimeSupport.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/junit-3.8.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/junit-4.10.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-antlr-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/vecmath.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/xmlpull-1.1.3.1.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jsr305-2.0.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-analysis-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/commons-logging-api-1.1.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-reporting-api-2.0.6.jar
+     [loader.2] file:/System/Library/Java/Extensions/libJ3D.jnilib
+     [loader.0] file:/Users/sarnobat/.groovy/lib/commons-cli-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-api-2.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/QTJava.zip
+     [loader.0] file:/Users/sarnobat/.groovy/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-junit-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3daudio.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-resources-plugin-2.4.3.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/junit-3.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/libQTJNative.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3dcore.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-util-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.inject-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-client-2.0.jar
+     [loader.0] file:/Users/sarnobat/trash/protobuf-2.4.1/examples/protobuf-java-2.4.1.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/osgi-resource-locator-1.0.1.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/asm-all-repackaged-2.1.88.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/extra166y-1.7.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/jai_core.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/rome-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/validation-api-1.1.0.Final.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-server-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-component-annotations-1.5.5.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-javac-2.0.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/commons-cli-1.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jdom-1.0.jar
+     [loader.1] file:/opt/local/share/java/groovy/lib/groovy-1.8.6.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/json-20090211.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-common-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/doxia-sink-api-1.0-alpha-7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-utils-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-manager-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.annotation-api-1.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-tree-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/httpclient-4.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.ws.rs-api-2.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/antlr-2.7.7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-compiler-plugin-3.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar
+     [loader.2] file:/System/Library/Java/Extensions/dns_sd.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-shared-utils-0.1.jar
+     [loader.2] file:/System/Library/Java/Extensions/MRJToolkit.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-build-api-0.0.4.jar
+     [loader.2] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-utils-1.5.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ivy-2.2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/xbean-reflect-3.4.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/cglib-2.1.88.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-locator-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/guava-14.0.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jsr166y-1.7.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/gpars-0.12.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jsp-api-2.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar
+     [loader.2] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+     [loader.2] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-launcher-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-api-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-container-jdk-http-2.0.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/bsf-2.4.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3dutils.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/log4j-1.2.12.jar
+     [loader.2] file:/System/Library/Java/Extensions/jai_codec.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/neo4j-kernel-1.9.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jline-0.9.94.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/commons-logging-1.1.1.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jansi-1.7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-interpolation-1.13.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-shared-incremental-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-filtering-1.0-beta-4.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-commons-3.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/servlet-api-2.4.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-interactivity-api-1.0-alpha-4.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/xstream-1.4.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/hamcrest-core-1.1.jar
+     [loader.0] file:/Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet/./
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-utils-2.0.5.jar
+2013-08-21 23:30:03.443+0000 INFO  [org.neo4j]: Library path:
+    /Users/sridharsarnobat/bin/instantclient
+    /Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet
+    /Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+2013-08-21 23:30:03.443+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries
+    awt.nativeDoubleBuffering = true
+    gopherProxySet = false
+    mrj.build = 11M4509
+    path.separator = :
+    file.encoding.pkg = sun.io
+    sun.java.launcher = SUN_STANDARD
+    user.country = US
+    sun.os.patch.level = unknown
+    program.name = groovy
+    user.dir = /Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet
+    tools.jar = /System/Library/Frameworks/JavaVM.framework/Home//lib/tools.jar
+    sun.jnu.encoding = MacRoman
+    script.name = /opt/local/bin/groovy
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    user.home = /Users/sarnobat
+    user.timezone = America/Los_Angeles
+    file.encoding = MacRoman
+    user.name = sarnobat
+    sun.java.command = org.codehaus.groovy.tools.GroovyStarter --main groovy.ui.GroovyMain --conf /opt/local/share/java/groovy/conf/groovy-starter.conf --classpath :/Users/sarnobat/trash/protobuf-2.4.1/examples/protobuf-java-2.4.1.jar:. -d webserver_json.groovy
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = apple.awt.CToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    groovy.starter.conf = /opt/local/share/java/groovy/conf/groovy-starter.conf
+    mrj.version = 1070.1.6.0_51-457
+    socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    groovy.home = /opt/local/share/java/groovy
+    sun.cpu.isalist = 
+2013-08-21 23:30:03.444+0000 INFO  [org.neo4j]: Network information:
+    Interface en0:
+        address: fe80:0:0:0:ba8d:12ff:fe0e:b856%4
+        address: 172.16.206.199
+    Interface lo0:
+        address: 0:0:0:0:0:0:0:1
+        address: fe80:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2013-08-21 23:30:03.447+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2013-08-21 23:30:03.476+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshiptypestore.db.names non clean shutdown detected
+2013-08-21 23:30:03.483+0000 INFO  [org.neo4j]: [yurl.db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-08-21 23:30:03.486+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshiptypestore.db non clean shutdown detected
+2013-08-21 23:30:03.486+0000 INFO  [org.neo4j]: [yurl.db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-08-21 23:30:03.487+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.strings non clean shutdown detected
+2013-08-21 23:30:03.488+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.strings] brickCount=2 brickSize=368000b mappedMem=368050176b (storeSize=736000b)
+2013-08-21 23:30:03.489+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index.keys non clean shutdown detected
+2013-08-21 23:30:03.489+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=76b)
+2013-08-21 23:30:03.492+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index non clean shutdown detected
+2013-08-21 23:30:03.493+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=18b)
+2013-08-21 23:30:03.494+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.arrays non clean shutdown detected
+2013-08-21 23:30:03.495+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.arrays] brickCount=0 brickSize=417280b mappedMem=417333248b (storeSize=128b)
+2013-08-21 23:30:03.502+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db non clean shutdown detected
+2013-08-21 23:30:03.502+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db] brickCount=13 brickSize=433042b mappedMem=433061888b (storeSize=5629546b)
+2013-08-21 23:30:03.504+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshipstore.db non clean shutdown detected
+2013-08-21 23:30:03.504+0000 INFO  [org.neo4j]: [yurl.db/neostore.relationshipstore.db] brickCount=0 brickSize=5305773b mappedMem=530579456b (storeSize=0b)
+2013-08-21 23:30:03.506+0000 INFO  [org.neo4j]: yurl.db/neostore.nodestore.db non clean shutdown detected
+2013-08-21 23:30:03.507+0000 INFO  [org.neo4j]: [yurl.db/neostore.nodestore.db] brickCount=4 brickSize=119529b mappedMem=119537664b (storeSize=478116b)
+2013-08-21 23:30:03.510+0000 INFO  [org.neo4j]: yurl.db/neostore non clean shutdown detected
+2013-08-21 23:30:03.510+0000 INFO  [org.neo4j]: [yurl.db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2013-08-21 23:30:03.532+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [yurl.db/nioneo_logical.log.1]. Recovery started ...
+2013-08-21 23:30:03.540+0000 INFO  [org.neo4j]: [yurl.db/nioneo_logical.log.1] logVersion=0 with committed tx=1
+2013-08-21 23:30:03.565+0000 INFO  [org.neo4j]: [yurl.db/nioneo_logical.log.1] entries found=20 lastEntryPos=984
+2013-08-21 23:30:03.565+0000 INFO  [org.neo4j]: Opened logical log [yurl.db/nioneo_logical.log.1] version=0, lastTxId=5 (recovered)
+2013-08-21 23:30:03.565+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] sorting 1 xids
+2013-08-21 23:30:03.566+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2013-08-21 23:30:03.571+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshiptypestore.db.names rebuild id generator, highId=1 defragged count=0
+2013-08-21 23:30:03.574+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index.keys rebuild id generator, highId=2 defragged count=0
+2013-08-21 23:30:03.577+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index rebuild id generator, highId=2 defragged count=0
+2013-08-21 23:30:03.663+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.strings rebuild id generator, highId=2876 defragged count=0
+2013-08-21 23:30:03.664+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2013-08-21 23:30:03.929+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db rebuild id generator, highId=126745 defragged count=0
+2013-08-21 23:30:03.949+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshipstore.db rebuild id generator, highId=1 defragged count=0
+2013-08-21 23:30:04.018+0000 INFO  [org.neo4j]: yurl.db/neostore.nodestore.db rebuild id generator, highId=39844 defragged count=0
+2013-08-21 23:30:04.020+0000 INFO  [org.neo4j]: yurl.db/neostore rebuild id generator, highId=6 defragged count=0
+2013-08-21 23:30:04.020+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] recovery completed.
+2013-08-21 23:30:04.020+0000 INFO  [org.neo4j]: Recovery on log [yurl.db/nioneo_logical.log.1] completed.
+2013-08-21 23:30:04.033+0000 INFO  [org.neo4j]: TM opening log: yurl.db/tm_tx_log.1
+2013-08-21 23:30:04.045+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2013-08-21 23:30:04.046+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1377116239365, id:6744211463637045025, store version: 13561656364791302]
+2013-08-21 23:30:04.050+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.2
+2013-08-21 23:30:04.050+0000 INFO  [org.neo4j]: Neo4j component versions:
+2013-08-21 23:30:04.103+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.2
+2013-08-21 23:30:04.104+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2013-08-21 23:30:04.111+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2013-08-21 23:30:04.113+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2013-08-21 23:30:04.113+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2013-08-21 23:30:04.113+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2013-08-21 23:30:04.113+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=53124 high=53123
+      RelationshipStore: used=1 high=0
+      RelationshipTypeStore: used=0 high=-1
+      PropertyStore: used=137306 high=137305
+      PropertyIndexStore: used=2 high=1
+      StringPropertyStore: used=5750 high=5749
+      ArrayPropertyStore: used=1 high=0
+2013-08-21 23:30:04.114+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2013-08-21 23:30:04.114+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2013-08-21 23:30:04.114+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2013-08-21 23:30:04.115+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2013-08-21 23:30:04.115+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 250140434432 / 14109777920 / 5
+Storage files: (filename : modification date - size)
+      active_tx_log: 2013-08-21T13:17:19-0700 - 11.00 B
+      lock: 2013-08-21T13:17:19-0700 - 0.00 B
+      messages.log: 2013-08-21T16:30:04-0700 - 236.94 kB
+      neostore: 2013-08-21T16:30:04-0700 - 54.00 B
+      neostore.id: 2013-08-21T16:30:04-0700 - 9.00 B
+      neostore.nodestore.db: 2013-08-21T16:30:03-0700 - 466.91 kB
+      neostore.nodestore.db.id: 2013-08-21T16:30:04-0700 - 9.00 B
+      neostore.propertystore.db: 2013-08-21T16:30:03-0700 - 5.37 MB
+      neostore.propertystore.db.arrays: 2013-08-21T13:17:19-0700 - 128.00 B
+      neostore.propertystore.db.arrays.id: 2013-08-21T16:30:03-0700 - 9.00 B
+      neostore.propertystore.db.id: 2013-08-21T16:30:03-0700 - 9.00 B
+      neostore.propertystore.db.index: 2013-08-21T16:30:03-0700 - 18.00 B
+      neostore.propertystore.db.index.id: 2013-08-21T16:30:03-0700 - 9.00 B
+      neostore.propertystore.db.index.keys: 2013-08-21T16:30:03-0700 - 76.00 B
+      neostore.propertystore.db.index.keys.id: 2013-08-21T16:30:03-0700 - 9.00 B
+      neostore.propertystore.db.strings: 2013-08-21T16:30:03-0700 - 718.75 kB
+      neostore.propertystore.db.strings.id: 2013-08-21T16:30:03-0700 - 9.00 B
+      neostore.relationshipstore.db: 2013-08-21T13:17:19-0700 - 0.00 B
+      neostore.relationshipstore.db.id: 2013-08-21T16:30:03-0700 - 9.00 B
+      neostore.relationshiptypestore.db: 2013-08-21T16:30:03-0700 - 0.00 B
+      neostore.relationshiptypestore.db.id: 2013-08-21T16:30:03-0700 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2013-08-21T13:17:19-0700 - 38.00 B
+      neostore.relationshiptypestore.db.names.id: 2013-08-21T16:30:03-0700 - 9.00 B
+      nioneo_logical.log.1: 2013-08-21T16:30:04-0700 - 989.00 B
+      nioneo_logical.log.active: 2013-08-21T13:17:19-0700 - 4.00 B
+      store_lock: 2013-08-21T13:17:19-0700 - 0.00 B
+      tm_tx_log.1: 2013-08-21T16:30:04-0700 - 0.00 B
+2013-08-21 23:30:18.443+0000 INFO  [org.neo4j]: WARNING! You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7.
+2013-08-21 23:30:18.444+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2013-08-21 23:30:18.444+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=413M
+    neostore.nodestore.db.mapped_memory=114M
+    neostore.relationshipstore.db.mapped_memory=506M
+    neostore.propertystore.db.strings.mapped_memory=351M
+    store_dir=yurl.db
+    neostore.propertystore.db.arrays.mapped_memory=398M
+    ephemeral=false
+2013-08-21 23:30:18.444+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2013-08-21 23:30:18.444+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 4.00 GB
+    Free Physical memory: 35.40 MB
+    Committed virtual memory: 2.73 GB
+    Total swap space: 8.00 GB
+    Free swap space: 935.23 MB
+2013-08-21 23:30:18.446+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 70.85 MB
+    Total memory: 81.06 MB
+    Max   memory: 123.94 MB
+    Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+    Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=1.99 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Par Eden Space (Heap memory): committed=16.63 MB, used=6.10 MB, max=16.63 MB, threshold=?
+    Memory Pool: Par Survivor Space (Heap memory): committed=2.06 MB, used=1.22 MB, max=2.06 MB, threshold=?
+    Memory Pool: CMS Old Gen (Heap memory): committed=62.38 MB, used=2.89 MB, max=105.25 MB, threshold=0.00 B
+    Memory Pool: CMS Perm Gen (Non-heap memory): committed=20.75 MB, used=19.05 MB, max=82.00 MB, threshold=0.00 B
+2013-08-21 23:30:18.451+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Mac OS X; version: 10.7.5; arch: x86_64; cpus: 4
+    Max number of file descriptors: 10240
+    Number of open file descriptors: 146
+    Process id: 67761@Sridhars-MacBook-Air.local
+    Byte order: LITTLE_ENDIAN
+    Local timezone: America/Los_Angeles
+2013-08-21 23:30:18.453+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Apple Inc.
+    VM Version: 20.51-b01-457
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dscript.name=/opt/local/bin/groovy, -Dprogram.name=groovy, -Dgroovy.starter.conf=/opt/local/share/java/groovy/conf/groovy-starter.conf, -Dgroovy.home=/opt/local/share/java/groovy, -Dtools.jar=/System/Library/Frameworks/JavaVM.framework/Home//lib/tools.jar]
+2013-08-21 23:30:18.454+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] /System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks/JavaRuntimeSupport.framework/Versions/A/Resources/Java/JavaRuntimeSupport.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/junit-3.8.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/junit-4.10.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-antlr-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/vecmath.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/xmlpull-1.1.3.1.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jsr305-2.0.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-analysis-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/commons-logging-api-1.1.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-reporting-api-2.0.6.jar
+     [loader.2] file:/System/Library/Java/Extensions/libJ3D.jnilib
+     [loader.0] file:/Users/sarnobat/.groovy/lib/commons-cli-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-api-2.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/QTJava.zip
+     [loader.0] file:/Users/sarnobat/.groovy/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-junit-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3daudio.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-resources-plugin-2.4.3.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/junit-3.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/libQTJNative.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3dcore.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-util-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.inject-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-client-2.0.jar
+     [loader.0] file:/Users/sarnobat/trash/protobuf-2.4.1/examples/protobuf-java-2.4.1.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/osgi-resource-locator-1.0.1.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/asm-all-repackaged-2.1.88.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/extra166y-1.7.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/jai_core.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/rome-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/validation-api-1.1.0.Final.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-server-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-component-annotations-1.5.5.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-javac-2.0.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/commons-cli-1.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jdom-1.0.jar
+     [loader.1] file:/opt/local/share/java/groovy/lib/groovy-1.8.6.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/json-20090211.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-common-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/doxia-sink-api-1.0-alpha-7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-utils-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-manager-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.annotation-api-1.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-tree-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/httpclient-4.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.ws.rs-api-2.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/antlr-2.7.7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-compiler-plugin-3.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar
+     [loader.2] file:/System/Library/Java/Extensions/dns_sd.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-shared-utils-0.1.jar
+     [loader.2] file:/System/Library/Java/Extensions/MRJToolkit.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-build-api-0.0.4.jar
+     [loader.2] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-utils-1.5.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ivy-2.2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/xbean-reflect-3.4.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/cglib-2.1.88.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-locator-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/guava-14.0.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jsr166y-1.7.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/gpars-0.12.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jsp-api-2.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar
+     [loader.2] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+     [loader.2] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-launcher-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-api-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-container-jdk-http-2.0.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/bsf-2.4.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3dutils.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/log4j-1.2.12.jar
+     [loader.2] file:/System/Library/Java/Extensions/jai_codec.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/neo4j-kernel-1.9.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jline-0.9.94.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/commons-logging-1.1.1.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jansi-1.7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-interpolation-1.13.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-shared-incremental-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-filtering-1.0-beta-4.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-commons-3.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/servlet-api-2.4.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-interactivity-api-1.0-alpha-4.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/xstream-1.4.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/hamcrest-core-1.1.jar
+     [loader.0] file:/Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet/./
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-utils-2.0.5.jar
+2013-08-21 23:30:18.467+0000 INFO  [org.neo4j]: Library path:
+    /Users/sridharsarnobat/bin/instantclient
+    /Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet
+    /Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+2013-08-21 23:30:18.468+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries
+    awt.nativeDoubleBuffering = true
+    gopherProxySet = false
+    mrj.build = 11M4509
+    path.separator = :
+    file.encoding.pkg = sun.io
+    sun.java.launcher = SUN_STANDARD
+    user.country = US
+    sun.os.patch.level = unknown
+    program.name = groovy
+    user.dir = /Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet
+    tools.jar = /System/Library/Frameworks/JavaVM.framework/Home//lib/tools.jar
+    sun.jnu.encoding = MacRoman
+    script.name = /opt/local/bin/groovy
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    user.home = /Users/sarnobat
+    user.timezone = America/Los_Angeles
+    file.encoding = MacRoman
+    user.name = sarnobat
+    sun.java.command = org.codehaus.groovy.tools.GroovyStarter --main groovy.ui.GroovyMain --conf /opt/local/share/java/groovy/conf/groovy-starter.conf --classpath :/Users/sarnobat/trash/protobuf-2.4.1/examples/protobuf-java-2.4.1.jar:. -d webserver_json.groovy
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = apple.awt.CToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    groovy.starter.conf = /opt/local/share/java/groovy/conf/groovy-starter.conf
+    mrj.version = 1070.1.6.0_51-457
+    socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    groovy.home = /opt/local/share/java/groovy
+    sun.cpu.isalist = 
+2013-08-21 23:30:18.469+0000 INFO  [org.neo4j]: Network information:
+    Interface en0:
+        address: fe80:0:0:0:ba8d:12ff:fe0e:b856%4
+        address: 172.16.206.199
+    Interface lo0:
+        address: 0:0:0:0:0:0:0:1
+        address: fe80:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2013-08-21 23:30:18.470+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2013-08-21 23:30:18.472+0000 INFO  [org.neo4j]: Startup failed: Component 'org.neo4j.kernel.StoreLockerLifecycleAdapter@70d9cbcb' was successfully initialized, but failed to start. Please see attached cause exception.: Unable to obtain lock on store lock file: yurl.db/store_lock. Please ensure no other process is using this database, and that the directory is writable (required even for read-only access): null
+2013-08-21 23:30:18.473+0000 INFO  [org.neo4j]: --- SHUTDOWN diagnostics START ---
+2013-08-21 23:30:18.473+0000 INFO  [org.neo4j]: --- SHUTDOWN diagnostics END ---
+2013-08-21 23:30:18.996+0000 INFO  [org.neo4j]: WARNING! You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7.
+2013-08-21 23:30:18.997+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2013-08-21 23:30:18.997+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=413M
+    neostore.nodestore.db.mapped_memory=114M
+    neostore.relationshipstore.db.mapped_memory=506M
+    neostore.propertystore.db.strings.mapped_memory=351M
+    store_dir=yurl.db
+    neostore.propertystore.db.arrays.mapped_memory=398M
+    ephemeral=false
+2013-08-21 23:30:18.998+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2013-08-21 23:30:18.998+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 4.00 GB
+    Free Physical memory: 31.96 MB
+    Committed virtual memory: 2.73 GB
+    Total swap space: 8.00 GB
+    Free swap space: 935.23 MB
+2013-08-21 23:30:18.999+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 70.09 MB
+    Total memory: 81.06 MB
+    Max   memory: 123.94 MB
+    Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+    Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=2.00 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Par Eden Space (Heap memory): committed=16.63 MB, used=6.87 MB, max=16.63 MB, threshold=?
+    Memory Pool: Par Survivor Space (Heap memory): committed=2.06 MB, used=1.22 MB, max=2.06 MB, threshold=?
+    Memory Pool: CMS Old Gen (Heap memory): committed=62.38 MB, used=2.89 MB, max=105.25 MB, threshold=0.00 B
+    Memory Pool: CMS Perm Gen (Non-heap memory): committed=20.75 MB, used=19.07 MB, max=82.00 MB, threshold=0.00 B
+2013-08-21 23:30:19.005+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Mac OS X; version: 10.7.5; arch: x86_64; cpus: 4
+    Max number of file descriptors: 10240
+    Number of open file descriptors: 146
+    Process id: 67761@Sridhars-MacBook-Air.local
+    Byte order: LITTLE_ENDIAN
+    Local timezone: America/Los_Angeles
+2013-08-21 23:30:19.005+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Apple Inc.
+    VM Version: 20.51-b01-457
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dscript.name=/opt/local/bin/groovy, -Dprogram.name=groovy, -Dgroovy.starter.conf=/opt/local/share/java/groovy/conf/groovy-starter.conf, -Dgroovy.home=/opt/local/share/java/groovy, -Dtools.jar=/System/Library/Frameworks/JavaVM.framework/Home//lib/tools.jar]
+2013-08-21 23:30:19.005+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] /System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks/JavaRuntimeSupport.framework/Versions/A/Resources/Java/JavaRuntimeSupport.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/junit-3.8.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/junit-4.10.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-antlr-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/vecmath.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/xmlpull-1.1.3.1.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jsr305-2.0.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-analysis-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/commons-logging-api-1.1.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-reporting-api-2.0.6.jar
+     [loader.2] file:/System/Library/Java/Extensions/libJ3D.jnilib
+     [loader.0] file:/Users/sarnobat/.groovy/lib/commons-cli-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-api-2.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/QTJava.zip
+     [loader.0] file:/Users/sarnobat/.groovy/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-junit-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3daudio.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-resources-plugin-2.4.3.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/junit-3.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/libQTJNative.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3dcore.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-util-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.inject-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-client-2.0.jar
+     [loader.0] file:/Users/sarnobat/trash/protobuf-2.4.1/examples/protobuf-java-2.4.1.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/osgi-resource-locator-1.0.1.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/asm-all-repackaged-2.1.88.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/extra166y-1.7.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/jai_core.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/rome-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/validation-api-1.1.0.Final.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-server-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-component-annotations-1.5.5.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-javac-2.0.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/commons-cli-1.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jdom-1.0.jar
+     [loader.1] file:/opt/local/share/java/groovy/lib/groovy-1.8.6.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/json-20090211.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-common-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/doxia-sink-api-1.0-alpha-7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-utils-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-manager-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.annotation-api-1.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-tree-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/httpclient-4.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.ws.rs-api-2.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/antlr-2.7.7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-compiler-plugin-3.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar
+     [loader.2] file:/System/Library/Java/Extensions/dns_sd.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-shared-utils-0.1.jar
+     [loader.2] file:/System/Library/Java/Extensions/MRJToolkit.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-build-api-0.0.4.jar
+     [loader.2] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-utils-1.5.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ivy-2.2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/xbean-reflect-3.4.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/cglib-2.1.88.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-locator-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/guava-14.0.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jsr166y-1.7.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/gpars-0.12.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jsp-api-2.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar
+     [loader.2] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+     [loader.2] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-launcher-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-api-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-container-jdk-http-2.0.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/bsf-2.4.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3dutils.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/log4j-1.2.12.jar
+     [loader.2] file:/System/Library/Java/Extensions/jai_codec.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/neo4j-kernel-1.9.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jline-0.9.94.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/commons-logging-1.1.1.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jansi-1.7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-interpolation-1.13.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-shared-incremental-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-filtering-1.0-beta-4.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-commons-3.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/servlet-api-2.4.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-interactivity-api-1.0-alpha-4.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/xstream-1.4.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/hamcrest-core-1.1.jar
+     [loader.0] file:/Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet/./
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-utils-2.0.5.jar
+2013-08-21 23:30:19.012+0000 INFO  [org.neo4j]: Library path:
+    /Users/sridharsarnobat/bin/instantclient
+    /Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet
+    /Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+2013-08-21 23:30:19.013+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries
+    awt.nativeDoubleBuffering = true
+    gopherProxySet = false
+    mrj.build = 11M4509
+    path.separator = :
+    file.encoding.pkg = sun.io
+    sun.java.launcher = SUN_STANDARD
+    user.country = US
+    sun.os.patch.level = unknown
+    program.name = groovy
+    user.dir = /Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet
+    tools.jar = /System/Library/Frameworks/JavaVM.framework/Home//lib/tools.jar
+    sun.jnu.encoding = MacRoman
+    script.name = /opt/local/bin/groovy
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    user.home = /Users/sarnobat
+    user.timezone = America/Los_Angeles
+    file.encoding = MacRoman
+    user.name = sarnobat
+    sun.java.command = org.codehaus.groovy.tools.GroovyStarter --main groovy.ui.GroovyMain --conf /opt/local/share/java/groovy/conf/groovy-starter.conf --classpath :/Users/sarnobat/trash/protobuf-2.4.1/examples/protobuf-java-2.4.1.jar:. -d webserver_json.groovy
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = apple.awt.CToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    groovy.starter.conf = /opt/local/share/java/groovy/conf/groovy-starter.conf
+    mrj.version = 1070.1.6.0_51-457
+    socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    groovy.home = /opt/local/share/java/groovy
+    sun.cpu.isalist = 
+2013-08-21 23:30:19.014+0000 INFO  [org.neo4j]: Network information:
+    Interface en0:
+        address: fe80:0:0:0:ba8d:12ff:fe0e:b856%4
+        address: 172.16.206.199
+    Interface lo0:
+        address: 0:0:0:0:0:0:0:1
+        address: fe80:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2013-08-21 23:30:19.016+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2013-08-21 23:30:19.017+0000 INFO  [org.neo4j]: Startup failed: Component 'org.neo4j.kernel.StoreLockerLifecycleAdapter@75c45731' was successfully initialized, but failed to start. Please see attached cause exception.: Unable to obtain lock on store lock file: yurl.db/store_lock. Please ensure no other process is using this database, and that the directory is writable (required even for read-only access): null
+2013-08-21 23:30:19.017+0000 INFO  [org.neo4j]: --- SHUTDOWN diagnostics START ---
+2013-08-21 23:30:19.017+0000 INFO  [org.neo4j]: --- SHUTDOWN diagnostics END ---
+2013-08-21 23:31:51.960+0000 INFO  [org.neo4j]: WARNING! You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7.
+2013-08-21 23:31:52.029+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2013-08-21 23:31:52.030+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=413M
+    neostore.nodestore.db.mapped_memory=114M
+    neostore.relationshipstore.db.mapped_memory=506M
+    neostore.propertystore.db.strings.mapped_memory=351M
+    store_dir=yurl.db
+    neostore.propertystore.db.arrays.mapped_memory=398M
+    ephemeral=false
+2013-08-21 23:31:52.033+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2013-08-21 23:31:52.034+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 4.00 GB
+    Free Physical memory: 6.77 MB
+    Committed virtual memory: 2.73 GB
+    Total swap space: 8.00 GB
+    Free swap space: 946.45 MB
+2013-08-21 23:31:52.042+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 67.63 MB
+    Total memory: 81.06 MB
+    Max   memory: 123.94 MB
+    Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+    Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=1.66 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Par Eden Space (Heap memory): committed=16.63 MB, used=9.64 MB, max=16.63 MB, threshold=?
+    Memory Pool: Par Survivor Space (Heap memory): committed=2.06 MB, used=2.03 MB, max=2.06 MB, threshold=?
+    Memory Pool: CMS Old Gen (Heap memory): committed=62.38 MB, used=1.77 MB, max=105.25 MB, threshold=0.00 B
+    Memory Pool: CMS Perm Gen (Non-heap memory): committed=20.75 MB, used=17.46 MB, max=82.00 MB, threshold=0.00 B
+2013-08-21 23:31:52.051+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Mac OS X; version: 10.7.5; arch: x86_64; cpus: 4
+    Max number of file descriptors: 10240
+    Number of open file descriptors: 115
+    Process id: 67829@Sridhars-MacBook-Air.local
+    Byte order: LITTLE_ENDIAN
+    Local timezone: America/Los_Angeles
+2013-08-21 23:31:52.060+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Apple Inc.
+    VM Version: 20.51-b01-457
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dscript.name=/opt/local/bin/groovy, -Dprogram.name=groovy, -Dgroovy.starter.conf=/opt/local/share/java/groovy/conf/groovy-starter.conf, -Dgroovy.home=/opt/local/share/java/groovy, -Dtools.jar=/System/Library/Frameworks/JavaVM.framework/Home//lib/tools.jar]
+2013-08-21 23:31:52.061+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] /System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks/JavaRuntimeSupport.framework/Versions/A/Resources/Java/JavaRuntimeSupport.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/junit-3.8.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/junit-4.10.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-antlr-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/vecmath.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/xmlpull-1.1.3.1.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jsr305-2.0.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-analysis-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/commons-logging-api-1.1.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-reporting-api-2.0.6.jar
+     [loader.2] file:/System/Library/Java/Extensions/libJ3D.jnilib
+     [loader.0] file:/Users/sarnobat/.groovy/lib/commons-cli-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-api-2.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/QTJava.zip
+     [loader.0] file:/Users/sarnobat/.groovy/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-junit-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3daudio.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-resources-plugin-2.4.3.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/junit-3.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/libQTJNative.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3dcore.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-util-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.inject-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-client-2.0.jar
+     [loader.0] file:/Users/sarnobat/trash/protobuf-2.4.1/examples/protobuf-java-2.4.1.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/osgi-resource-locator-1.0.1.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/asm-all-repackaged-2.1.88.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/extra166y-1.7.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/jai_core.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/rome-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/validation-api-1.1.0.Final.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-server-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-component-annotations-1.5.5.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-javac-2.0.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/commons-cli-1.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jdom-1.0.jar
+     [loader.1] file:/opt/local/share/java/groovy/lib/groovy-1.8.6.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/json-20090211.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-common-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/doxia-sink-api-1.0-alpha-7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-utils-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-manager-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.annotation-api-1.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-tree-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/httpclient-4.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.ws.rs-api-2.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/antlr-2.7.7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-compiler-plugin-3.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar
+     [loader.2] file:/System/Library/Java/Extensions/dns_sd.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-shared-utils-0.1.jar
+     [loader.2] file:/System/Library/Java/Extensions/MRJToolkit.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-build-api-0.0.4.jar
+     [loader.2] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-utils-1.5.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ivy-2.2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/xbean-reflect-3.4.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/cglib-2.1.88.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-locator-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/guava-14.0.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jsr166y-1.7.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/gpars-0.12.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jsp-api-2.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar
+     [loader.2] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+     [loader.2] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-launcher-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-api-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-container-jdk-http-2.0.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/bsf-2.4.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3dutils.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/log4j-1.2.12.jar
+     [loader.2] file:/System/Library/Java/Extensions/jai_codec.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/neo4j-kernel-1.9.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jline-0.9.94.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/commons-logging-1.1.1.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jansi-1.7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-interpolation-1.13.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-shared-incremental-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-filtering-1.0-beta-4.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-commons-3.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/servlet-api-2.4.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-interactivity-api-1.0-alpha-4.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/xstream-1.4.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/hamcrest-core-1.1.jar
+     [loader.0] file:/Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet/./
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-utils-2.0.5.jar
+2013-08-21 23:31:52.071+0000 INFO  [org.neo4j]: Library path:
+    /Users/sridharsarnobat/bin/instantclient
+    /Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet
+    /Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+2013-08-21 23:31:52.071+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries
+    awt.nativeDoubleBuffering = true
+    gopherProxySet = false
+    mrj.build = 11M4509
+    path.separator = :
+    file.encoding.pkg = sun.io
+    sun.java.launcher = SUN_STANDARD
+    user.country = US
+    sun.os.patch.level = unknown
+    program.name = groovy
+    user.dir = /Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet
+    tools.jar = /System/Library/Frameworks/JavaVM.framework/Home//lib/tools.jar
+    sun.jnu.encoding = MacRoman
+    script.name = /opt/local/bin/groovy
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    user.home = /Users/sarnobat
+    user.timezone = America/Los_Angeles
+    file.encoding = MacRoman
+    user.name = sarnobat
+    sun.java.command = org.codehaus.groovy.tools.GroovyStarter --main groovy.ui.GroovyMain --conf /opt/local/share/java/groovy/conf/groovy-starter.conf --classpath :/Users/sarnobat/trash/protobuf-2.4.1/examples/protobuf-java-2.4.1.jar:. -d webserver_json.groovy
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = apple.awt.CToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    groovy.starter.conf = /opt/local/share/java/groovy/conf/groovy-starter.conf
+    mrj.version = 1070.1.6.0_51-457
+    socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    groovy.home = /opt/local/share/java/groovy
+    sun.cpu.isalist = 
+2013-08-21 23:31:52.072+0000 INFO  [org.neo4j]: Network information:
+    Interface en0:
+        address: fe80:0:0:0:ba8d:12ff:fe0e:b856%4
+        address: 172.16.206.199
+    Interface lo0:
+        address: 0:0:0:0:0:0:0:1
+        address: fe80:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2013-08-21 23:31:52.077+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2013-08-21 23:31:52.105+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshiptypestore.db.names non clean shutdown detected
+2013-08-21 23:31:52.111+0000 INFO  [org.neo4j]: [yurl.db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-08-21 23:31:52.115+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshiptypestore.db non clean shutdown detected
+2013-08-21 23:31:52.116+0000 INFO  [org.neo4j]: [yurl.db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-08-21 23:31:52.117+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.strings non clean shutdown detected
+2013-08-21 23:31:52.117+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.strings] brickCount=3 brickSize=368000b mappedMem=368050176b (storeSize=1104000b)
+2013-08-21 23:31:52.118+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index.keys non clean shutdown detected
+2013-08-21 23:31:52.118+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=114b)
+2013-08-21 23:31:52.121+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index non clean shutdown detected
+2013-08-21 23:31:52.121+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=27b)
+2013-08-21 23:31:52.123+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.arrays non clean shutdown detected
+2013-08-21 23:31:52.123+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.arrays] brickCount=0 brickSize=417280b mappedMem=417333248b (storeSize=128b)
+2013-08-21 23:31:52.132+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db non clean shutdown detected
+2013-08-21 23:31:52.132+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db] brickCount=14 brickSize=433042b mappedMem=433061888b (storeSize=6062588b)
+2013-08-21 23:31:52.134+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshipstore.db non clean shutdown detected
+2013-08-21 23:31:52.134+0000 INFO  [org.neo4j]: [yurl.db/neostore.relationshipstore.db] brickCount=0 brickSize=5305773b mappedMem=530579456b (storeSize=0b)
+2013-08-21 23:31:52.137+0000 INFO  [org.neo4j]: yurl.db/neostore.nodestore.db non clean shutdown detected
+2013-08-21 23:31:52.138+0000 INFO  [org.neo4j]: [yurl.db/neostore.nodestore.db] brickCount=5 brickSize=119529b mappedMem=119537664b (storeSize=597645b)
+2013-08-21 23:31:52.144+0000 INFO  [org.neo4j]: yurl.db/neostore non clean shutdown detected
+2013-08-21 23:31:52.144+0000 INFO  [org.neo4j]: [yurl.db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2013-08-21 23:31:52.170+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [yurl.db/nioneo_logical.log.1]. Recovery started ...
+2013-08-21 23:31:52.178+0000 INFO  [org.neo4j]: [yurl.db/nioneo_logical.log.1] logVersion=0 with committed tx=1
+2013-08-21 23:31:52.209+0000 INFO  [org.neo4j]: [yurl.db/nioneo_logical.log.1] entries found=26 lastEntryPos=1360
+2013-08-21 23:31:52.211+0000 INFO  [org.neo4j]: Opened logical log [yurl.db/nioneo_logical.log.1] version=0, lastTxId=6 (recovered)
+2013-08-21 23:31:52.211+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] sorting 1 xids
+2013-08-21 23:31:52.212+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2013-08-21 23:31:52.218+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshiptypestore.db.names rebuild id generator, highId=1 defragged count=0
+2013-08-21 23:31:52.221+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index.keys rebuild id generator, highId=3 defragged count=0
+2013-08-21 23:31:52.222+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index rebuild id generator, highId=3 defragged count=0
+2013-08-21 23:31:52.313+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.strings rebuild id generator, highId=5752 defragged count=0
+2013-08-21 23:31:52.314+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2013-08-21 23:31:52.578+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db rebuild id generator, highId=137307 defragged count=0
+2013-08-21 23:31:52.579+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshipstore.db rebuild id generator, highId=1 defragged count=0
+2013-08-21 23:31:52.663+0000 INFO  [org.neo4j]: yurl.db/neostore.nodestore.db rebuild id generator, highId=53125 defragged count=0
+2013-08-21 23:31:52.664+0000 INFO  [org.neo4j]: yurl.db/neostore rebuild id generator, highId=6 defragged count=0
+2013-08-21 23:31:52.665+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] recovery completed.
+2013-08-21 23:31:52.665+0000 INFO  [org.neo4j]: Recovery on log [yurl.db/nioneo_logical.log.1] completed.
+2013-08-21 23:31:52.670+0000 INFO  [org.neo4j]: TM opening log: yurl.db/tm_tx_log.1
+2013-08-21 23:31:52.676+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2013-08-21 23:31:52.676+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1377116239365, id:6744211463637045025, store version: 13561656364791302]
+2013-08-21 23:31:52.679+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.2
+2013-08-21 23:31:52.679+0000 INFO  [org.neo4j]: Neo4j component versions:
+2013-08-21 23:31:52.680+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.2
+2013-08-21 23:31:52.691+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2013-08-21 23:31:52.713+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2013-08-21 23:31:52.717+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2013-08-21 23:31:52.719+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2013-08-21 23:31:52.719+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2013-08-21 23:31:52.719+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=66405 high=66404
+      RelationshipStore: used=1 high=0
+      RelationshipTypeStore: used=0 high=-1
+      PropertyStore: used=147868 high=147867
+      PropertyIndexStore: used=3 high=2
+      StringPropertyStore: used=8625 high=8624
+      ArrayPropertyStore: used=1 high=0
+2013-08-21 23:31:52.720+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2013-08-21 23:31:52.720+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2013-08-21 23:31:52.720+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2013-08-21 23:31:52.721+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2013-08-21 23:31:52.721+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 250140434432 / 14117400576 / 5
+Storage files: (filename : modification date - size)
+      active_tx_log: 2013-08-21T13:17:19-0700 - 11.00 B
+      lock: 2013-08-21T13:17:19-0700 - 0.00 B
+      messages.log: 2013-08-21T16:31:52-0700 - 285.59 kB
+      neostore: 2013-08-21T16:31:52-0700 - 54.00 B
+      neostore.id: 2013-08-21T16:31:52-0700 - 9.00 B
+      neostore.nodestore.db: 2013-08-21T16:31:52-0700 - 583.64 kB
+      neostore.nodestore.db.id: 2013-08-21T16:31:52-0700 - 9.00 B
+      neostore.propertystore.db: 2013-08-21T16:31:52-0700 - 5.78 MB
+      neostore.propertystore.db.arrays: 2013-08-21T13:17:19-0700 - 128.00 B
+      neostore.propertystore.db.arrays.id: 2013-08-21T16:31:52-0700 - 9.00 B
+      neostore.propertystore.db.id: 2013-08-21T16:31:52-0700 - 9.00 B
+      neostore.propertystore.db.index: 2013-08-21T16:31:52-0700 - 27.00 B
+      neostore.propertystore.db.index.id: 2013-08-21T16:31:52-0700 - 9.00 B
+      neostore.propertystore.db.index.keys: 2013-08-21T16:31:52-0700 - 114.00 B
+      neostore.propertystore.db.index.keys.id: 2013-08-21T16:31:52-0700 - 9.00 B
+      neostore.propertystore.db.strings: 2013-08-21T16:31:52-0700 - 1.05 MB
+      neostore.propertystore.db.strings.id: 2013-08-21T16:31:52-0700 - 9.00 B
+      neostore.relationshipstore.db: 2013-08-21T13:17:19-0700 - 0.00 B
+      neostore.relationshipstore.db.id: 2013-08-21T16:31:52-0700 - 9.00 B
+      neostore.relationshiptypestore.db: 2013-08-21T16:31:52-0700 - 0.00 B
+      neostore.relationshiptypestore.db.id: 2013-08-21T16:31:52-0700 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2013-08-21T13:17:19-0700 - 38.00 B
+      neostore.relationshiptypestore.db.names.id: 2013-08-21T16:31:52-0700 - 9.00 B
+      nioneo_logical.log.1: 2013-08-21T16:31:52-0700 - 1.33 kB
+      nioneo_logical.log.active: 2013-08-21T13:17:19-0700 - 4.00 B
+      store_lock: 2013-08-21T13:17:19-0700 - 0.00 B
+      tm_tx_log.1: 2013-08-21T16:31:52-0700 - 0.00 B
+2013-08-21 23:34:00.432+0000 INFO  [org.neo4j]: WARNING! You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7.
+2013-08-21 23:34:00.503+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2013-08-21 23:34:00.504+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=413M
+    neostore.nodestore.db.mapped_memory=114M
+    neostore.relationshipstore.db.mapped_memory=506M
+    neostore.propertystore.db.strings.mapped_memory=351M
+    store_dir=yurl.db
+    neostore.propertystore.db.arrays.mapped_memory=398M
+    ephemeral=false
+2013-08-21 23:34:00.507+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2013-08-21 23:34:00.508+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 4.00 GB
+    Free Physical memory: 21.76 MB
+    Committed virtual memory: 2.73 GB
+    Total swap space: 8.00 GB
+    Free swap space: 874.49 MB
+2013-08-21 23:34:00.516+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 67.79 MB
+    Total memory: 81.06 MB
+    Max   memory: 123.94 MB
+    Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+    Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=1.66 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Par Eden Space (Heap memory): committed=16.63 MB, used=9.80 MB, max=16.63 MB, threshold=?
+    Memory Pool: Par Survivor Space (Heap memory): committed=2.06 MB, used=1.70 MB, max=2.06 MB, threshold=?
+    Memory Pool: CMS Old Gen (Heap memory): committed=62.38 MB, used=1.77 MB, max=105.25 MB, threshold=0.00 B
+    Memory Pool: CMS Perm Gen (Non-heap memory): committed=20.75 MB, used=17.47 MB, max=82.00 MB, threshold=0.00 B
+2013-08-21 23:34:00.523+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Mac OS X; version: 10.7.5; arch: x86_64; cpus: 4
+    Max number of file descriptors: 10240
+    Number of open file descriptors: 115
+    Process id: 67956@Sridhars-MacBook-Air.local
+    Byte order: LITTLE_ENDIAN
+    Local timezone: America/Los_Angeles
+2013-08-21 23:34:00.528+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Apple Inc.
+    VM Version: 20.51-b01-457
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dscript.name=/opt/local/bin/groovy, -Dprogram.name=groovy, -Dgroovy.starter.conf=/opt/local/share/java/groovy/conf/groovy-starter.conf, -Dgroovy.home=/opt/local/share/java/groovy, -Dtools.jar=/System/Library/Frameworks/JavaVM.framework/Home//lib/tools.jar]
+2013-08-21 23:34:00.529+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] /System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks/JavaRuntimeSupport.framework/Versions/A/Resources/Java/JavaRuntimeSupport.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/junit-3.8.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/junit-4.10.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-antlr-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/vecmath.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/xmlpull-1.1.3.1.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jsr305-2.0.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-analysis-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/commons-logging-api-1.1.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-reporting-api-2.0.6.jar
+     [loader.2] file:/System/Library/Java/Extensions/libJ3D.jnilib
+     [loader.0] file:/Users/sarnobat/.groovy/lib/commons-cli-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-api-2.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/QTJava.zip
+     [loader.0] file:/Users/sarnobat/.groovy/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-junit-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3daudio.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-resources-plugin-2.4.3.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/junit-3.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/libQTJNative.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3dcore.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-util-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.inject-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-client-2.0.jar
+     [loader.0] file:/Users/sarnobat/trash/protobuf-2.4.1/examples/protobuf-java-2.4.1.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/osgi-resource-locator-1.0.1.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/asm-all-repackaged-2.1.88.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/extra166y-1.7.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/jai_core.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/rome-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/validation-api-1.1.0.Final.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-server-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-component-annotations-1.5.5.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-javac-2.0.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/commons-cli-1.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jdom-1.0.jar
+     [loader.1] file:/opt/local/share/java/groovy/lib/groovy-1.8.6.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/json-20090211.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-common-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/doxia-sink-api-1.0-alpha-7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-utils-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-compiler-manager-2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.annotation-api-1.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-tree-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/httpclient-4.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/javax.ws.rs-api-2.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/antlr-2.7.7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-compiler-plugin-3.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar
+     [loader.2] file:/System/Library/Java/Extensions/dns_sd.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-shared-utils-0.1.jar
+     [loader.2] file:/System/Library/Java/Extensions/MRJToolkit.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-build-api-0.0.4.jar
+     [loader.2] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-3.2.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-utils-1.5.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/ivy-2.2.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/xbean-reflect-3.4.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/cglib-2.1.88.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-locator-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/guava-14.0.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jsr166y-1.7.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/gpars-0.12.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jsp-api-2.0.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar
+     [loader.2] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+     [loader.2] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+     [loader.0] file:/opt/local/share/java/groovy/lib/ant-launcher-1.8.2.jar
+     [loader.2] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+     [loader.0] file:/Users/sarnobat/.groovy/lib/hk2-api-2.1.88.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/jersey-container-jdk-http-2.0.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/bsf-2.4.0.jar
+     [loader.2] file:/System/Library/Java/Extensions/j3dutils.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/log4j-1.2.12.jar
+     [loader.2] file:/System/Library/Java/Extensions/jai_codec.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/neo4j-kernel-1.9.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jline-0.9.94.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/commons-logging-1.1.1.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/jansi-1.7.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-interpolation-1.13.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-shared-incremental-1.0.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/maven-filtering-1.0-beta-4.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/asm-commons-3.2.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/servlet-api-2.4.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-interactivity-api-1.0-alpha-4.jar
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/xstream-1.4.1.jar
+     [loader.0] file:/opt/local/share/java/groovy/lib/hamcrest-core-1.1.jar
+     [loader.0] file:/Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet/./
+     [bootstrap] /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar
+     [loader.2] file:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar
+     [loader.0] file:/Users/sarnobat/.groovy/lib/plexus-utils-2.0.5.jar
+2013-08-21 23:34:00.534+0000 INFO  [org.neo4j]: Library path:
+    /Users/sridharsarnobat/bin/instantclient
+    /Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet
+    /Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+2013-08-21 23:34:00.535+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries
+    awt.nativeDoubleBuffering = true
+    gopherProxySet = false
+    mrj.build = 11M4509
+    path.separator = :
+    file.encoding.pkg = sun.io
+    sun.java.launcher = SUN_STANDARD
+    user.country = US
+    sun.os.patch.level = unknown
+    program.name = groovy
+    user.dir = /Users/sarnobat/Desktop/github-repositories/yurl_bookmarklet
+    tools.jar = /System/Library/Frameworks/JavaVM.framework/Home//lib/tools.jar
+    sun.jnu.encoding = MacRoman
+    script.name = /opt/local/bin/groovy
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    user.home = /Users/sarnobat
+    user.timezone = America/Los_Angeles
+    file.encoding = MacRoman
+    user.name = sarnobat
+    sun.java.command = org.codehaus.groovy.tools.GroovyStarter --main groovy.ui.GroovyMain --conf /opt/local/share/java/groovy/conf/groovy-starter.conf --classpath :/Users/sarnobat/trash/protobuf-2.4.1/examples/protobuf-java-2.4.1.jar:. -d webserver_json.groovy
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = apple.awt.CToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    groovy.starter.conf = /opt/local/share/java/groovy/conf/groovy-starter.conf
+    mrj.version = 1070.1.6.0_51-457
+    socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    groovy.home = /opt/local/share/java/groovy
+    sun.cpu.isalist = 
+2013-08-21 23:34:00.535+0000 INFO  [org.neo4j]: Network information:
+    Interface en0:
+        address: fe80:0:0:0:ba8d:12ff:fe0e:b856%4
+        address: 172.16.206.199
+    Interface lo0:
+        address: 0:0:0:0:0:0:0:1
+        address: fe80:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2013-08-21 23:34:00.537+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2013-08-21 23:34:00.556+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshiptypestore.db.names non clean shutdown detected
+2013-08-21 23:34:00.561+0000 INFO  [org.neo4j]: [yurl.db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2013-08-21 23:34:00.564+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshiptypestore.db non clean shutdown detected
+2013-08-21 23:34:00.565+0000 INFO  [org.neo4j]: [yurl.db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2013-08-21 23:34:00.566+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.strings non clean shutdown detected
+2013-08-21 23:34:00.567+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.strings] brickCount=4 brickSize=368000b mappedMem=368050176b (storeSize=1472000b)
+2013-08-21 23:34:00.568+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index.keys non clean shutdown detected
+2013-08-21 23:34:00.568+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=114b)
+2013-08-21 23:34:00.570+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index non clean shutdown detected
+2013-08-21 23:34:00.570+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=27b)
+2013-08-21 23:34:00.572+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.arrays non clean shutdown detected
+2013-08-21 23:34:00.572+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db.arrays] brickCount=0 brickSize=417280b mappedMem=417333248b (storeSize=128b)
+2013-08-21 23:34:00.580+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db non clean shutdown detected
+2013-08-21 23:34:00.580+0000 INFO  [org.neo4j]: [yurl.db/neostore.propertystore.db] brickCount=15 brickSize=433042b mappedMem=433061888b (storeSize=6495630b)
+2013-08-21 23:34:00.582+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshipstore.db non clean shutdown detected
+2013-08-21 23:34:00.582+0000 INFO  [org.neo4j]: [yurl.db/neostore.relationshipstore.db] brickCount=0 brickSize=5305773b mappedMem=530579456b (storeSize=0b)
+2013-08-21 23:34:00.584+0000 INFO  [org.neo4j]: yurl.db/neostore.nodestore.db non clean shutdown detected
+2013-08-21 23:34:00.585+0000 INFO  [org.neo4j]: [yurl.db/neostore.nodestore.db] brickCount=6 brickSize=119529b mappedMem=119537664b (storeSize=717174b)
+2013-08-21 23:34:00.588+0000 INFO  [org.neo4j]: yurl.db/neostore non clean shutdown detected
+2013-08-21 23:34:00.588+0000 INFO  [org.neo4j]: [yurl.db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2013-08-21 23:34:00.607+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [yurl.db/nioneo_logical.log.1]. Recovery started ...
+2013-08-21 23:34:00.615+0000 INFO  [org.neo4j]: [yurl.db/nioneo_logical.log.1] logVersion=0 with committed tx=1
+2013-08-21 23:34:00.638+0000 INFO  [org.neo4j]: [yurl.db/nioneo_logical.log.1] entries found=31 lastEntryPos=1653
+2013-08-21 23:34:00.638+0000 INFO  [org.neo4j]: Opened logical log [yurl.db/nioneo_logical.log.1] version=0, lastTxId=7 (recovered)
+2013-08-21 23:34:00.638+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] sorting 1 xids
+2013-08-21 23:34:00.639+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2013-08-21 23:34:00.645+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshiptypestore.db.names rebuild id generator, highId=1 defragged count=0
+2013-08-21 23:34:00.649+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index.keys rebuild id generator, highId=3 defragged count=0
+2013-08-21 23:34:00.650+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.index rebuild id generator, highId=3 defragged count=0
+2013-08-21 23:34:00.731+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.strings rebuild id generator, highId=8626 defragged count=0
+2013-08-21 23:34:00.733+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2013-08-21 23:34:01.151+0000 INFO  [org.neo4j]: yurl.db/neostore.propertystore.db rebuild id generator, highId=147869 defragged count=0
+2013-08-21 23:34:01.162+0000 INFO  [org.neo4j]: yurl.db/neostore.relationshipstore.db rebuild id generator, highId=1 defragged count=0
+2013-08-21 23:34:01.254+0000 INFO  [org.neo4j]: yurl.db/neostore.nodestore.db rebuild id generator, highId=66406 defragged count=0
+2013-08-21 23:34:01.255+0000 INFO  [org.neo4j]: yurl.db/neostore rebuild id generator, highId=6 defragged count=0
+2013-08-21 23:34:01.256+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] recovery completed.
+2013-08-21 23:34:01.256+0000 INFO  [org.neo4j]: Recovery on log [yurl.db/nioneo_logical.log.1] completed.
+2013-08-21 23:34:01.262+0000 INFO  [org.neo4j]: TM opening log: yurl.db/tm_tx_log.1
+2013-08-21 23:34:01.297+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2013-08-21 23:34:01.297+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1377116239365, id:6744211463637045025, store version: 13561656364791302]
+2013-08-21 23:34:01.299+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel 1.9.2
+2013-08-21 23:34:01.299+0000 INFO  [org.neo4j]: Neo4j component versions:
+2013-08-21 23:34:01.300+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel 1.9.2
+2013-08-21 23:34:01.300+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2013-08-21 23:34:01.302+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2013-08-21 23:34:01.302+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2013-08-21 23:34:01.302+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2013-08-21 23:34:01.303+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2013-08-21 23:34:01.303+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=79686 high=79685
+      RelationshipStore: used=1 high=0
+      RelationshipTypeStore: used=0 high=-1
+      PropertyStore: used=158430 high=158429
+      PropertyIndexStore: used=3 high=2
+      StringPropertyStore: used=11500 high=11499
+      ArrayPropertyStore: used=1 high=0
+2013-08-21 23:34:01.303+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2013-08-21 23:34:01.304+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2013-08-21 23:34:01.304+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2013-08-21 23:34:01.305+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2013-08-21 23:34:01.306+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 250140434432 / 14114443264 / 5
+Storage files: (filename : modification date - size)
+      active_tx_log: 2013-08-21T13:17:19-0700 - 11.00 B
+      lock: 2013-08-21T13:17:19-0700 - 0.00 B
+      messages.log: 2013-08-21T16:34:01-0700 - 307.30 kB
+      neostore: 2013-08-21T16:34:01-0700 - 54.00 B
+      neostore.id: 2013-08-21T16:34:01-0700 - 9.00 B
+      neostore.nodestore.db: 2013-08-21T16:34:00-0700 - 700.37 kB
+      neostore.nodestore.db.id: 2013-08-21T16:34:01-0700 - 9.00 B
+      neostore.propertystore.db: 2013-08-21T16:34:00-0700 - 6.19 MB
+      neostore.propertystore.db.arrays: 2013-08-21T13:17:19-0700 - 128.00 B
+      neostore.propertystore.db.arrays.id: 2013-08-21T16:34:00-0700 - 9.00 B
+      neostore.propertystore.db.id: 2013-08-21T16:34:01-0700 - 9.00 B
+      neostore.propertystore.db.index: 2013-08-21T16:34:00-0700 - 27.00 B
+      neostore.propertystore.db.index.id: 2013-08-21T16:34:00-0700 - 9.00 B
+      neostore.propertystore.db.index.keys: 2013-08-21T16:34:00-0700 - 114.00 B
+      neostore.propertystore.db.index.keys.id: 2013-08-21T16:34:00-0700 - 9.00 B
+      neostore.propertystore.db.strings: 2013-08-21T16:34:00-0700 - 1.40 MB
+      neostore.propertystore.db.strings.id: 2013-08-21T16:34:00-0700 - 9.00 B
+      neostore.relationshipstore.db: 2013-08-21T13:17:19-0700 - 0.00 B
+      neostore.relationshipstore.db.id: 2013-08-21T16:34:01-0700 - 9.00 B
+      neostore.relationshiptypestore.db: 2013-08-21T16:34:00-0700 - 0.00 B
+      neostore.relationshiptypestore.db.id: 2013-08-21T16:34:00-0700 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2013-08-21T13:17:19-0700 - 38.00 B
+      neostore.relationshiptypestore.db.names.id: 2013-08-21T16:34:00-0700 - 9.00 B
+      nioneo_logical.log.1: 2013-08-21T16:34:01-0700 - 1.62 kB
+      nioneo_logical.log.active: 2013-08-21T13:17:19-0700 - 4.00 B
+      store_lock: 2013-08-21T13:17:19-0700 - 0.00 B
+      tm_tx_log.1: 2013-08-21T16:34:01-0700 - 0.00 B
