@@ -153,7 +153,7 @@ class MyHandler implements HttpHandler {
 		return map;
 	}
 }
-HttpServer server = HttpServer.create(new InetSocketAddress(4444), 0);
+HttpServer server = HttpServer.create(new InetSocketAddress(4445), 0);
 server.createContext("/", new MyHandler());
 server.setExecutor(null); // creates a default executor
 server.start();
